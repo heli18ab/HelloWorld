@@ -1,33 +1,36 @@
 /*index kode*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 body {
     background: #fbcac1;
     color: #bb7a7f;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
-git s
+
 /*meny css*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-   overflow: hidden;
-    background-color: #f1f1f1;
-    border: 1px solid #555;
-    width:100%;
-    margin-left: 2px;
+     overflow: hidden;
+    background-color: #fbcac1;;
+    width:50%;
+    margin-left: 25%;
+    margin-top: 20%;
+
 }
 
 li{
+    font-size: 40px;
     text-align: center;
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
     float: left;
-    width: 33.15%;
+    width: 33.1%;
 }
 
 li a {
     display: block;
-    color: #000;
+    color:#bb7a7f;
     padding: 8px 16px;
     text-decoration: none;
     text-align : center;
@@ -35,8 +38,9 @@ li a {
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #555;
+    border-bottom: 5px solid white;
     color: white;
+
 }
 
 li a.active {
@@ -44,10 +48,7 @@ li a.active {
     color: white;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
+
 
 li:last-child{
     border-bottom: none;

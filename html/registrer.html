@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link type="text/css" rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<h1>jei</h1>
-<h2>Hei kjære venner</h2>
+<ul>
+    <li><a href="bear.html"> Bear </a> </li>
+    <li><a href="registrer.html"> Register</a>  </li>
+    <li><a href="index.html"> Hjem</a> </li>
+</ul>
+
+
+<h2>Register</h2>
+
+<form id="register-form">
+    <input id="username" type="text" placeholder="Username" value=""/>
+    <input id="password" type="password" placeholder="Password" value=""/>
+    <input id="registration_btn" type="submit" value="Register" onClick="storeinfo()"/>
+</form>
+
+
+<h2>Show users</h2>
+<input id="list_users_btn" type="submit" value="Show user" onClick="showUser()"/>
+<h2>Login</h2>
+<form id="login-form">
+    <input id="enteredName" type="text" placeholder="Enter Username" value=""/>
+    <input id="enteredPass" type="password" placeholder="Enter Password" value=""/>
+    <input id="login_btn" type="submit" value="Login" onClick="checkLogin()"/>
+</form>
+
+<!--link til javascript-->
+<script src="../helloworld.js"> </script>
 </body>
 </html>
