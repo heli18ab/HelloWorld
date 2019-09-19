@@ -2,33 +2,60 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
+:root{
+--background: #000;
+--text:#FFF;
+--highlight:#FF1EAD;
+}
+
 body {
     background: #fbcac1;
     color: #bb7a7f;
     font-family: 'Oswald', sans-serif;
+
 }
 
-/*meny css*/
-ul {
+h1{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/*nameDrop*/
+
+
+
+
+/*menyIndex css*/
+.navigationIndex {
+    display: flex;
+    justify-content: center;   /*legger innhold i midten*/
+}
+.navigationIndex ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
      overflow: hidden;
     background-color: #fbcac1;;
     width:50%;
-    margin-left: 25%;
-    margin-top: 20%;
+    text-transform: uppercase;
+
 
 }
 
-li{
-    font-size: 40px;
+.navigationIndex li{
+    font-size: 35px;
     text-align: center;
     float: left;
-    width: 33.1%;
+    width: 33.2%;
+    margin-top: 200px;
 }
 
-li a {
+.bilde{
+    width:400px
+}
+
+
+.navigationIndex li a {
     display: block;
     color:#bb7a7f;
     padding: 8px 16px;
@@ -37,22 +64,88 @@ li a {
 }
 
 /* Change the link color on hover */
-li a:hover {
+.navigationIndex li a:hover {
+    transition: 0.3s transform ease, 0.5s;
     border-bottom: 5px solid white;
-    color: white;
+
 
 }
 
-li a.active {
+.navigationIndex li a.active {
     background-color: #4CAF50;
     color: white;
 }
 
 
 
-li:last-child{
+.navigationIndex li:last-child{
     border-bottom: none;
 }
+
+/*menyDiv css*/
+.navigationDiv {
+    display: flex;
+
+}
+
+.navigationDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fbcac1;;
+    width:20%;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+}
+
+.navigationDiv li{
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    width: auto;
+}
+
+.navigationDiv li a {
+    display: block;
+    color:#bb7a7f;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align : center;
+}
+
+/* Change the link color on hover */
+.navigationDiv li a:hover {
+
+    border-bottom: 5px solid white;
+
+
+
+}
+
+.navigationDiv li a.active {
+    background-color: black;
+}
+
+
+
+
+.navigationDiv li:last-child{
+    border-bottom: none;
+}
+
+
+/*registration*/
+.register-form {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.9s forwards;
+}
+
 
 /*bear*/
 .container,
